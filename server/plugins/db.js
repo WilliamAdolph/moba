@@ -8,5 +8,7 @@ module.exports = app => {
     }else{
         console.log("连接成功")
     }
-})
+  })
+
+  require('require-all')(__dirname + '/../models')
 }
