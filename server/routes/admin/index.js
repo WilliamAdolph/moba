@@ -53,7 +53,7 @@ module.exports = app => {
   app.post('/admin/api/upload',authMiddleware(),upload.single('file'),async(req,res) => {
     // return res.file
     const file = req.file
-    file.url = `http://localhost:3000/uploads/${file.filename}`
+    file.url = `http://120.78.192.19:3000/uploads/${file.filename}`
     res.send(file)
   })
 
